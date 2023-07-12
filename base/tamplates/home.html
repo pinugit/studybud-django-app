@@ -7,6 +7,7 @@
     <div>
         {% for room in rooms %}
             <div>
+                <h4>{{room.name}}</h4>
                 <h4>{{room.id}} -- <a href="room/{{room.id}}/">{{room.name}}</a></h4>
             </div>
 
