@@ -4,8 +4,8 @@ from django.db import models
 
 class Room(models.Model):
     name = models.CharField(max_length=200)
-    discription = models.TextField(null=True)
-    updated = models.DateTimeField(auto_now=True, blank=True)
+    discription = models.TextField(null=True, blank=True)
+    updated = models.DateTimeField(auto_now=True )
     saved = models.DateTimeField(auto_now_add=True)
 
     def __str__(self) -> str:
